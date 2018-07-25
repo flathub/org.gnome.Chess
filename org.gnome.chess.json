@@ -3,7 +3,6 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "3.28",
     "sdk": "org.gnome.Sdk",
-    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
     "command": "gnome-chess",
     "copy-icon": true,
     "rename-icon": "gnome-chess",
@@ -21,8 +20,7 @@
         "--filesystem=xdg-documents"
     ],
     "build-options": {
-        "cflags": "-O2 -g",
-        "append-path": "/usr/lib/sdk/rust-stable/bin"
+        "cflags": "-O2 -g"
     },
     "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
     "modules": [
