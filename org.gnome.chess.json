@@ -37,30 +37,6 @@
             ]
         },
         {
-            "name": "gdk-pixbuf2",
-            "buildsystem": "meson",
-            "cleanup": [ "/bin"],
-            "sources": [
-                 {
-                     "type": "archive",
-                     "url": "https://download.gnome.org/sources/gdk-pixbuf/2.37/gdk-pixbuf-2.37.0.tar.xz",
-                     "sha256": "81508700f500eca3f21c4cfd0a3486459a373a65e07457a9a4f3bf7d08109c11"
-                 }
-            ]
-        },
-        {
-            "name": "librsvg",
-            "config-opts": ["--disable-static", "--enable-vala"],
-            "ensure-writable": ["/lib/gdk-pixbuf-2.0/*/loaders.cache"],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/librsvg/2.43/librsvg-2.43.0.tar.xz",
-                    "sha256": "4c7bb265314b0ec38b0ec292e11adc62dc1bb4953e920472fe4e2e3b0fe12422"
-                }
-            ]
-        },
-        {
             "name": "gnome-chess",
             "buildsystem": "meson",
             "sources": [
