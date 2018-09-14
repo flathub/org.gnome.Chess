@@ -29,8 +29,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://ftpmirror.gnu.org/chess/gnuchess-6.2.3.tar.gz",
-                    "sha256": "78999176b2f2b5e0325bcc69749b7b2cefb7b1ef4f02d101fa77ae24a1b31b82"
+                    "url": "https://ftpmirror.gnu.org/chess/gnuchess-6.2.5.tar.gz",
+                    "sha256": "9a99e963355706cab32099d140b698eda9de164ebce40a5420b1b9772dd04802"
                 }
             ]
         },
@@ -40,8 +40,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-chess/3.28/gnome-chess-3.28.1.tar.xz",
-                    "sha256": "61d7eda645ab74fcf6fa586bc3edc49f01d4a4076f98e1e53d4b4c842b600fe1"
+                    "url": "https://download.gnome.org/sources/gnome-chess/3.30/gnome-chess-3.30.0.tar.xz",
+                    "sha256": "aa1e7adf1dbbcfbaa2eabad2dce0a209a58a298f83795f47790e078300e47c94"
                 }
             ]
         }
