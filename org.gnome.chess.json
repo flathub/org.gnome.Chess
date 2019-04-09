@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.chess",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
+    "runtime-version": "3.30",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-chess",
     "copy-icon": true,
@@ -15,8 +15,7 @@
         "--socket=wayland",
         /* dconf */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
-        "--own-name=org.gnome.Chess"
+        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
     "modules": [
@@ -36,8 +35,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-chess/3.32/gnome-chess-3.32.0.tar.xz",
-                    "sha256": "6998a9bc6cee1d7b6b203f9ec744f33c6f1983adb0b0a7b477c1bbca8936eb43"
+                    "url": "https://download.gnome.org/sources/gnome-chess/3.30/gnome-chess-3.30.1.tar.xz",
+                    "sha256": "f4f13791a0b46da5afdc9d23a3845f8ddc4ce718cf0403a901bd4f52bea9edbf"
                 }
             ]
         }
