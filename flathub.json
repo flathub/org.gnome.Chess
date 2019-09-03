@@ -1,3 +1,4 @@
 {
-    "end-of-life": "This application has been renamed to org.gnome.Chess"
+    "end-of-life": "This application has been renamed to org.gnome.Chess",
+    "end-of-life-rebase": "org.gnome.Chess"
 }
