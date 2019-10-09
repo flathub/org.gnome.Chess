@@ -13,36 +13,36 @@
     ],
     "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
     "modules": [
-    	{
+        {
             "name": "stockfish",
             "buildsystem": "simple",
             "build-options" : {
-				"arch": {
-				    "x86_64": {
-				        "env": {
-				        	"ARCH": "x86-64"
-				        }
-				    },
-				    "i386": {
-					    "env": {
-				        	"ARCH": "x86-32"
-				        }
-				    },
-				    "arm": {
-					    "env": {
-				        	"ARCH": "armv7"
-				        }
-				    },
-				    "aarch64": {
-					    "env": {
-				        	"ARCH": "armv7"
-				        }
-				    }
-				}
-			},
+                "arch": {
+                    "x86_64": {
+                        "env": {
+                            "ARCH": "x86-64"
+                        }
+                    },
+                    "i386": {
+                        "env": {
+                            "ARCH": "x86-32"
+                        }
+                    },
+                    "arm": {
+                        "env": {
+                            "ARCH": "armv7"
+                        }
+                    },
+                    "aarch64": {
+                        "env": {
+                            "ARCH": "armv7"
+                        }
+                    }
+                }
+            },
             "build-commands": [
-            	"make build",
-            	"install -D stockfish /app/bin/stockfish"
+                "make build",
+                "install -D stockfish /app/bin/stockfish"
             ],
             "sources": [
                 {
