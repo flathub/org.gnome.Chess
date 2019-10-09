@@ -14,6 +14,23 @@
     "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
     "modules": [
         {
+            "name": "phalanx",
+            "buildsystem": "simple",
+            "build-commands": [
+                "make",
+                "install -D phalanx /app/bin/phalanx",
+                "install -D pbook.phalanx /app/lib/pbook.phalanx",
+                "install -D sbook.phalanx /app/lib/sbook.phalanx"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://downloads.sourceforge.net/project/phalanx/Version%20XXV/phalanx-XXV-source.tgz",
+                    "sha256": "b3874d5dcd22c64626b2c955b18b27bcba3aa727855361a91eab57a6324b22dd"
+                }
+            ]
+        },
+        {
             "name": "stockfish",
             "buildsystem": "simple",
             "build-options" : {
