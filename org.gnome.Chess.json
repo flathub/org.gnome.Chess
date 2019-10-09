@@ -13,6 +13,45 @@
     ],
     "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
     "modules": [
+    	{
+            "name": "stockfish",
+            "buildsystem": "simple",
+            "build-options" : {
+				"arch": {
+				    "x86_64": {
+				        "env": {
+				        	"ARCH": "x86-64"
+				        }
+				    },
+				    "i386": {
+					    "env": {
+				        	"ARCH": "x86-32"
+				        }
+				    },
+				    "arm": {
+					    "env": {
+				        	"ARCH": "armv7"
+				        }
+				    },
+				    "aarch64": {
+					    "env": {
+				        	"ARCH": "armv7"
+				        }
+				    }
+				}
+			},
+            "build-commands": [
+            	"make build",
+            	"install -D stockfish /app/bin/stockfish"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://stockfishchess.org/files/stockfish-10-src.zip",
+                    "sha256": "29bd01e7407098aa9e851b82f6ea4bf2b46d26e9075a48a269cb1e40c582a073"
+                }
+            ]
+        },
         {
             "name": "gnuchess",
             "sources": [
