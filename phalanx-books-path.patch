@@ -1,0 +1,60 @@
+--- ./phalanx-old.h	2016-05-01 21:06:21.000000000 +0300
++++ ./phalanx.h	2019-10-10 19:37:53.697318140 +0300
+@@ -195,7 +195,7 @@
+ #define PBOOK_FILE "pbook.phalanx"
+ #endif
+ #ifndef PBOOK_DIR
+-#define PBOOK_DIR "/usr/local/lib/phalanx"
++#define PBOOK_DIR "/app/share/phalanx"
+ #endif
+ 
+ /* secondary (binary, large, generated from pgn) book */
+@@ -203,14 +203,14 @@
+ #define SBOOK_FILE "sbook.phalanx"
+ #endif
+ #ifndef SBOOK_DIR
+-#define SBOOK_DIR "/usr/local/lib/phalanx"
++#define SBOOK_DIR "/app/share/phalanx"
+ #endif
+ 
+ #ifndef ECO_FILE
+ #define ECO_FILE "eco.phalanx"
+ #endif
+ #ifndef ECO_DIR
+-#define ECO_DIR "/usr/local/lib/phalanx"
++#define ECO_DIR "/app/share/phalanx"
+ #endif
+ 
+ #ifndef LEARN_FILE
+ 
+
+--- phalanx-XXIII.orig/phalanx.c
++++ phalanx-XXIII/phalanx.c
+@@ -325,8 +325,17 @@ EcoDir = get_book_file(EcoDir,ENV_ECO,EC
+ Eco = fopen(EcoDir,"rb");
+ if( Flag.learn )
+ {
++	char learn_dir[128];
++	struct stat st;
++
++	sprintf(learn_dir, "%s/.phalanx", getenv("XDG_DATA_HOME"));
++
++	if(stat(learn_dir, &st) || !S_ISDIR(st.st_mode)) {
++		mkdir(learn_dir, 0755);
++	}
++	
+ 	LbookDir
+-	= get_book_file(LbookDir,ENV_LEARN,LEARN_DIR,LEARN_FILE,R_OK|W_OK);
++	= get_book_file(LbookDir,ENV_LEARN,learn_dir,LEARN_FILE,R_OK|W_OK);
+ 	Learn.f = fopen(LbookDir,"r+");
+ 	if( Learn.f == NULL )
+ 	{
+@@ -334,7 +343,7 @@ if( Flag.learn )
+ 		int b[LFSZ];
+ 		char filename[256];
+ 		memset( b, 0, LFSZ*sizeof(int) );
+-  		sprintf(filename,"./%s",LEARN_FILE);
++  		sprintf(filename,"%s/%s", learn_dir, LEARN_FILE);
+ 		free( LbookDir );
+ 		LbookDir = strdup( filename );
+ 		Learn.f = fopen(LbookDir,"w+");
