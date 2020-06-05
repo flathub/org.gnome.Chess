@@ -86,7 +86,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-chess/3.36/gnome-chess-3.36.1.tar.xz",
-                    "sha256": "https://download.gnome.org/sources/gnome-chess/3.36/gnome-chess-3.36.1.tar.xz"
+                    "sha256": "b195c9f17a59d7fcc892ff55e6a6ebdd16e7329157bf37e3c2fe593b349aab98"
                 }
             ]
         }
