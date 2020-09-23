@@ -91,7 +91,7 @@
                       "type": "html",
                       "url": "https://download.gnome.org/sources/gnome-chess/",
                       "version-pattern": "(\d+\.\d+)",
-                      "url-pattern": "https://download.gnome.org/sources/gnome-chess/(\d+\.\d+)/gnome-chess-(\d+\.\d+\.\d+).tar.xz"
+                      "url-pattern": "https://download.gnome.org/sources/gnome-chess/\d+\.\d+/gnome-chess-(\d+\.\d+\.\d+).tar.xz"
                     }
                 }
             ]
