@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Chess",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-chess",
     "finish-args": [
@@ -85,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-chess/3.36/gnome-chess-3.36.1.tar.xz",
-                    "sha256": "b195c9f17a59d7fcc892ff55e6a6ebdd16e7329157bf37e3c2fe593b349aab98",
+                    "url": "https://download.gnome.org/sources/gnome-chess/3.38/gnome-chess-3.38.0.tar.xz",
+                    "sha256": "0fb797546b8a015bede73b1ad35d97c5a83cb7972ec5d87f042b75d93a22c283",
                     "x-checker-data": {
                       "type": "html",
                       "url": "https://download.gnome.org/sources/gnome-chess/",
