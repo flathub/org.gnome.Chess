@@ -5,13 +5,17 @@
     "sdk": "org.gnome.Sdk",
     "command": "gnome-chess",
     "finish-args": [
-        /* X11 + XShm access */
-        "--share=ipc", "--socket=fallback-x11",
-        /* Wayland access */
+        "--share=ipc",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/org/gnome/Chess/"
     ],
-    "cleanup": ["/share/gnuchess", "/share/info", "/share/man", "/include"],
+    "cleanup": [
+        "/share/gnuchess",
+        "/share/info",
+        "/share/man",
+        "/include"
+    ],
     "modules": [
         {
             "name": "phalanx",
@@ -38,7 +42,7 @@
         {
             "name": "stockfish",
             "buildsystem": "simple",
-            "build-options" : {
+            "build-options": {
                 "arch": {
                     "x86_64": {
                         "env": {
@@ -85,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-chess/3.38/gnome-chess-3.38.0.tar.xz",
-                    "sha256": "0fb797546b8a015bede73b1ad35d97c5a83cb7972ec5d87f042b75d93a22c283",
+                    "url": "https://download.gnome.org/sources/gnome-chess/3.38/gnome-chess-3.38.1.tar.xz",
+                    "sha256": "1470f037c0dffe0285c121f7b6655e1245761f99a9974ab3c04dee5d6e89f5ae",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://download.gnome.org/sources/gnome-chess/cache.json",
