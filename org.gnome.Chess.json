@@ -90,7 +90,7 @@
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://download.gnome.org/sources/gnome-chess/cache.json",
-                        "version-query": ".[2][\"gnome-chess\"] | last",
+                        "version-query": ".[2][\"gnome-chess\"] | map(select(. | match(\"([0-9].[0-9]*[02468].[0-9]+)|([0-9]+.[0-9]+)\"; \"g\"))) | last",
                         "url-query": "\"https://download.gnome.org/sources/gnome-chess/\" + .[1][\"gnome-chess\"][$version][\"tar.xz\"]"
                     }
                 }
