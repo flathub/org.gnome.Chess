@@ -31,7 +31,7 @@
                 {
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/phalanx/Version%20XXV/phalanx-XXV-source.tgz",
-                    "sha256": "b3874d5dcd22c64626b2c955b18b27bcba3aa727855361a91eab57a6324b22dd"
+                    "sha256": "251a85b3bac687974f360d3796048c20ded3bf0bd69e0d1cfd1db23d013f89ed"
                 },
                 {
                     "type": "patch",
