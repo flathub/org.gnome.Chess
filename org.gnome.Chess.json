@@ -50,11 +50,6 @@
                             "ARCH": "x86-64"
                         }
                     },
-                    "arm": {
-                        "env": {
-                            "ARCH": "armv7"
-                        }
-                    },
                     "aarch64": {
                         "env": {
                             "ARCH": "armv7"
