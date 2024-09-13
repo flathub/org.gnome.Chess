@@ -94,7 +94,7 @@
                 }
             ],
             "build-commands": [
-                    "sed -i -e 's/-\\/raw\\/master\\//-\\/raw\\/46\\.0\\//g' data/org.gnome.Chess.appdata.xml"
+                    "sed -i -e 's/-\\/raw\\/master\\//-\\/raw\\/47\\.0\\//g' data/org.gnome.Chess.appdata.xml"
             ]
         }
     ]
