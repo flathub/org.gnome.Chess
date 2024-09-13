@@ -58,14 +58,14 @@
                 }
             },
             "build-commands": [
-                "make build",
-                "install -D stockfish /app/bin/stockfish"
+                "cd src;make build",
+                "install -D src/stockfish /app/bin/stockfish"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://stockfishchess.org/files/stockfish-10-src.zip",
-                    "sha256": "29bd01e7407098aa9e851b82f6ea4bf2b46d26e9075a48a269cb1e40c582a073"
+                    "url": "https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_11.tar.gz",
+                    "sha256": "802261cc601b67bed00c0ef7d21e2125959630f0852a06db9fc9bd74f440b199"
                 }
             ]
         },
