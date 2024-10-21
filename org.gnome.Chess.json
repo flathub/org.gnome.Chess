@@ -75,7 +75,12 @@
                 {
                     "type": "archive",
                     "url": "https://ftpmirror.gnu.org/chess/gnuchess-6.2.9.tar.gz",
-                    "sha256": "ddfcc20bdd756900a9ab6c42c7daf90a2893bf7f19ce347420ce36baebc41890"
+                    "sha256": "ddfcc20bdd756900a9ab6c42c7daf90a2893bf7f19ce347420ce36baebc41890",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": "1206",
+                        "url-template": "https://ftpmirror.gnu.org/chess/gnuchess-$version.tar.gz"
+                    }
                 }
             ]
         },
