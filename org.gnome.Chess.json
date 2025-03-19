@@ -8,8 +8,7 @@
         "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
-        "--socket=wayland",
-        "--metadata=X-DConf=migrate-path=/org/gnome/Chess/"
+        "--socket=wayland"
     ],
     "cleanup": [
         "/share/gnuchess",
