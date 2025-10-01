@@ -89,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-chess/49/gnome-chess-49.0.tar.xz",
-                    "sha256": "403493f016e9927d7f9c54773bbc9d0a9341f3eef9d4317b45edc0ab0a22c88f",
+                    "url": "https://download.gnome.org/sources/gnome-chess/49/gnome-chess-49.1.tar.xz",
+                    "sha256": "c491aee94ba6ab56c71ff96cd1befe6dc9e129bda5e00c84dae89995c56d134d",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-chess"
